@@ -82,7 +82,7 @@ app.use(cartRouter);
 app.use(paymentAPI);
 
 
-const PORT = 4444;
+const PORT = process.env.PORT || 4444;
 app.listen(PORT, () => {
     console.log('Server is up at port', PORT);
 })
